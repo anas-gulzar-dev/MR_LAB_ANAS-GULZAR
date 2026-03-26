@@ -1,0 +1,5 @@
+[console_scripts]
+move_to_goal = my_turtle_package.move_to_goal:main
+move_turtle = my_turtle_package.move_turtle:main
+multi_turtle_patterns = my_turtle_package.multi_turtle_patterns:main
+my_node = my_turtle_package.my_node:main

@@ -1,0 +1,45 @@
+[1.022s] Invoking command in '/home/anas/ros2_ws/src/my_turtle_package': PYTHONPATH=/home/anas/ros2_ws/build/my_turtle_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_turtle_package build --build-base /home/anas/ros2_ws/build/my_turtle_package/build install --record /home/anas/ros2_ws/build/my_turtle_package/install.log --single-version-externally-managed install_data
+[1.283s] running egg_info
+[1.301s] creating ../../build/my_turtle_package/my_turtle_package.egg-info
+[1.301s] writing ../../build/my_turtle_package/my_turtle_package.egg-info/PKG-INFO
+[1.302s] writing dependency_links to ../../build/my_turtle_package/my_turtle_package.egg-info/dependency_links.txt
+[1.302s] writing entry points to ../../build/my_turtle_package/my_turtle_package.egg-info/entry_points.txt
+[1.302s] writing requirements to ../../build/my_turtle_package/my_turtle_package.egg-info/requires.txt
+[1.303s] writing top-level names to ../../build/my_turtle_package/my_turtle_package.egg-info/top_level.txt
+[1.303s] writing manifest file '../../build/my_turtle_package/my_turtle_package.egg-info/SOURCES.txt'
+[1.343s] reading manifest file '../../build/my_turtle_package/my_turtle_package.egg-info/SOURCES.txt'
+[1.344s] writing manifest file '../../build/my_turtle_package/my_turtle_package.egg-info/SOURCES.txt'
+[1.344s] running build
+[1.344s] running build_py
+[1.344s] creating /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.344s] copying my_turtle_package/__init__.py -> /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.345s] copying my_turtle_package/move_turtle.py -> /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.345s] copying my_turtle_package/move_to_goal.py -> /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.345s] copying my_turtle_package/multi_turtle_patterns.py -> /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.345s] copying my_turtle_package/my_node.py -> /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package
+[1.345s] running install
+[1.349s] running install_lib
+[1.369s] creating /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.369s] copying /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package/__init__.py -> /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.369s] copying /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package/move_turtle.py -> /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.369s] copying /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package/move_to_goal.py -> /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.369s] copying /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package/multi_turtle_patterns.py -> /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.369s] copying /home/anas/ros2_ws/build/my_turtle_package/build/lib/my_turtle_package/my_node.py -> /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package
+[1.370s] byte-compiling /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package/__init__.py to __init__.cpython-310.pyc
+[1.370s] byte-compiling /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package/move_turtle.py to move_turtle.cpython-310.pyc
+[1.371s] byte-compiling /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package/move_to_goal.py to move_to_goal.cpython-310.pyc
+[1.371s] byte-compiling /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package/multi_turtle_patterns.py to multi_turtle_patterns.cpython-310.pyc
+[1.372s] byte-compiling /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package/my_node.py to my_node.cpython-310.pyc
+[1.372s] running install_data
+[1.372s] creating /home/anas/ros2_ws/install/my_turtle_package/share/ament_index/resource_index/packages
+[1.373s] copying resource/my_turtle_package -> /home/anas/ros2_ws/install/my_turtle_package/share/ament_index/resource_index/packages
+[1.373s] copying package.xml -> /home/anas/ros2_ws/install/my_turtle_package/share/my_turtle_package
+[1.373s] running install_egg_info
+[1.393s] Copying ../../build/my_turtle_package/my_turtle_package.egg-info to /home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages/my_turtle_package-0.0.0-py3.10.egg-info
+[1.394s] running install_scripts
+[1.434s] Installing move_to_goal script to /home/anas/ros2_ws/install/my_turtle_package/lib/my_turtle_package
+[1.434s] Installing move_turtle script to /home/anas/ros2_ws/install/my_turtle_package/lib/my_turtle_package
+[1.434s] Installing multi_turtle_patterns script to /home/anas/ros2_ws/install/my_turtle_package/lib/my_turtle_package
+[1.434s] Installing my_node script to /home/anas/ros2_ws/install/my_turtle_package/lib/my_turtle_package
+[1.434s] writing list of installed files to '/home/anas/ros2_ws/build/my_turtle_package/install.log'
+[1.472s] Invoked command in '/home/anas/ros2_ws/src/my_turtle_package' returned '0': PYTHONPATH=/home/anas/ros2_ws/build/my_turtle_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/my_turtle_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_turtle_package build --build-base /home/anas/ros2_ws/build/my_turtle_package/build install --record /home/anas/ros2_ws/build/my_turtle_package/install.log --single-version-externally-managed install_data
