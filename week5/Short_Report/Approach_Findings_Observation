@@ -1,0 +1,23 @@
+Lab 4 Short Report (Approach, Findings, Observations)
+
+1) : Approach
+
+Created an ament_python ROS 2 package to manage launch + node code, and used ROS 2 launch to start turtlesim components together.
+Implemented a multi-node launch that starts turtlesim_node, starts keyboard teleop, and spawns a second turtle using the /spawn service call (see turtlesim_launch.py).
+Implemented a “follow-the-leader” node where turtle2 follows turtle1 by subscribing to /turtle1/pose and /turtle2/pose and publishing velocity commands to /turtle2/cmd_vel using a proportional controller (see follow_leader.py).
+Integrated the follow behavior into a launch file that (1) starts turtlesim, (2) spawns turtle2 after a short delay, then (3) starts the follow node (see follow_leader_launch.py).
+Recorded command/pose topics using rosbag2 during motion, and replayed the bag to validate that recorded messages reproduce the same commanded motion pattern.
+
+2) : Findings
+
+Launch files made the workflow repeatable: one command reliably starts the simulator, teleop, and supporting processes (spawn + follower).
+A startup delay before calling /spawn is important; without waiting briefly for turtlesim to be ready, spawn calls can be inconsistent. Using TimerAction produced more reliable startup behavior.
+The follow-the-leader controller worked well with proportional control + angle normalization (heading error wrapped to [−pi,pi]), and a small stop distance reduced “jitter” when turtle2 is close to turtle1.
+
+3) : Observations
+
+With proportional control, turtle2 typically lags behind turtle1 during sharp turns; higher angular gain reduces lag but can increase oscillation/overshoot.
+Rosbag recording captured the commanded velocity sequence successfully. From the bag currently in your workspace (metadata.yaml), /turtle1/cmd_vel had a small set of samples; exporting those samples to CSV showed:
+linear.x ranged 0.0 to 2.0 (mean ≈ 0.8)
+angular.z ranged -2.0 to 2.0 (mean absolute ≈ 1.2)
+In rqt_plot, /turtle1/cmd_vel shows clear spikes/steps during direction changes (linear segments when moving forward, angular segments when rotating), which matches expected teleop behavior.

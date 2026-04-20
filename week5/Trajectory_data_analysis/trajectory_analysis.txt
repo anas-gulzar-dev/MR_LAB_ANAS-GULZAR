@@ -1,0 +1,31 @@
+Extracted trajectory data from rosbag: lab4_traj_bag_clean
+Bag duration (s): 13.713
+
+Turtle1 (leader)
+- Samples: 856
+- Start (x,y): (5.544, 5.544)
+- End   (x,y): (7.506, 7.246)
+- Path length (approx): 15.392
+- Displacement: 2.596
+- Bounding box: x[3.528, 7.528], y[5.544, 9.544]
+- Mean linear_velocity: 1.124, mean |linear_velocity|: 1.124
+- Mean angular_velocity: 0.562, mean |angular_velocity|: 0.562
+- Avg speed (path/duration): 1.122
+- Max step between samples: 0.0320
+
+Turtle2 (follower)
+- Samples: 856
+- Start (x,y): (2.000, 2.000)
+- End   (x,y): (7.237, 6.838)
+- Path length (approx): 18.693
+- Displacement: 7.130
+- Bounding box: x[2.000, 7.344], y[2.000, 9.345]
+- Mean linear_velocity: 1.365, mean |linear_velocity|: 1.365
+- Mean angular_velocity: 0.530, mean |angular_velocity|: 0.613
+- Avg speed (path/duration): 1.363
+- Max step between samples: 0.1203
+
+Leader–Follower spacing (index-aligned approximation)
+- Mean gap: 1.098
+- Min gap:  0.481
+- Max gap:  5.013
