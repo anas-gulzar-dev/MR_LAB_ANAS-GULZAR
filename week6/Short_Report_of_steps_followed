@@ -1,0 +1,23 @@
+Short Report (Lab Manual 5: Gazebo + RViz with TurtleBot3)
+
+1): Environment was prepared by sourcing ROS 2 Humble and setting TURTLEBOT3_MODEL=burger.
+
+2): Gazebo simulation was launched with ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py.
+
+3): RViz + SLAM was launched with ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=true.
+
+4): In RViz, the required displays were checked/added: LaserScan, Path, TF, Map, and Odometry, with Fixed Frame set to map.
+
+5): Robot teleoperation was tested using ros2 run turtlebot3_teleop teleop_keyboard; robot motion toward target points was verified in Gazebo.
+
+6): LiDAR and odometry data were observed live in RViz while driving, and frame relations were inspected in the TF view (map -> odom -> base_link -> sensor frames).
+
+7): Motion recording was performed with ros2 bag record -a and later replay/visual verification was done in RViz.
+
+8): SLAM map generation was monitored and saved using ros2 run nav2_map_server map_saver_cli -f maps/my_map.
+
+9): Return-to-origin behavior was attempted by manually teleoperating the robot back near (0,0,0) in simulation.
+
+10): Task 8: custom publisher node was run to alternately publish forward velocity and zero velocity to /cmd_vel every 2 seconds; behavior was verified from node logs and topic monitoring.
+
+11): Task 9: /odom message type was identified (nav_msgs/msg/Odometry), and subscriber code was run to print received odometry messages in terminal.

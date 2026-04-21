@@ -1,0 +1,17 @@
+Observations: Expected vs Simulated Motion (TurtleBot3 in Gazebo)
+
+1): The robot does not stop instantly after key release or stop command; a short glide is visible due to controller update rate and physics integration.
+
+2): Straight-line commands sometimes produce slight drift/curvature, mainly from wheel-slip/friction modeling and discrete control timing.
+
+3): Rotation-in-place is not perfectly exact; small translation can appear while turning because of contact/friction effects in simulation.
+
+4): Odometry in RViz can lag briefly behind visual motion in Gazebo, especially when system load is high, causing small pose mismatch at a given moment.
+
+5): At low speeds, command quantization and teleop step increments make motion feel “jerky” rather than perfectly smooth.
+
+6): During rapid command changes (forward ↔ stop), /cmd_vel updates are immediate, but physical response in Gazebo appears delayed by a fraction of a second.
+
+7): Returning exactly to (0,0,0) is difficult by manual teleop; cumulative odometry error and manual control granularity cause small final offset.
+
+8): Laser and map updates are consistent overall, but the mapped pose may show slight transient misalignment during fast turns due to SLAM update timing.
