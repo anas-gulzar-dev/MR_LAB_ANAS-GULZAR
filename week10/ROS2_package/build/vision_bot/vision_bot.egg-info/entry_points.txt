@@ -1,0 +1,3 @@
+[console_scripts]
+camera_follower = vision_bot.camera_follower:main
+

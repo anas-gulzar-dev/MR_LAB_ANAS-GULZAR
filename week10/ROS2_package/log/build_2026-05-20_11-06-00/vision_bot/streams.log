@@ -1,0 +1,24 @@
+[0.982s] Invoking command in '/home/anas/ros2_ws/src/vision_bot': PYTHONPATH=/home/anas/ros2_ws/build/vision_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_bot build --build-base /home/anas/ros2_ws/build/vision_bot/build install --record /home/anas/ros2_ws/build/vision_bot/install.log --single-version-externally-managed install_data
+[1.272s] running egg_info
+[1.272s] writing ../../build/vision_bot/vision_bot.egg-info/PKG-INFO
+[1.273s] writing dependency_links to ../../build/vision_bot/vision_bot.egg-info/dependency_links.txt
+[1.273s] writing entry points to ../../build/vision_bot/vision_bot.egg-info/entry_points.txt
+[1.273s] writing requirements to ../../build/vision_bot/vision_bot.egg-info/requires.txt
+[1.273s] writing top-level names to ../../build/vision_bot/vision_bot.egg-info/top_level.txt
+[1.277s] reading manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+[1.277s] writing manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+[1.278s] running build
+[1.278s] running build_py
+[1.278s] copying vision_bot/camera_follower.py -> /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+[1.278s] running install
+[1.278s] running install_lib
+[1.279s] copying /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot/camera_follower.py -> /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+[1.280s] byte-compiling /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot/camera_follower.py to camera_follower.cpython-310.pyc
+[1.282s] running install_data
+[1.283s] running install_egg_info
+[1.285s] removing '/home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.285s] Copying ../../build/vision_bot/vision_bot.egg-info to /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot-0.0.0-py3.10.egg-info
+[1.286s] running install_scripts
+[1.307s] Installing camera_follower script to /home/anas/ros2_ws/install/vision_bot/lib/vision_bot
+[1.307s] writing list of installed files to '/home/anas/ros2_ws/build/vision_bot/install.log'
+[1.388s] Invoked command in '/home/anas/ros2_ws/src/vision_bot' returned '0': PYTHONPATH=/home/anas/ros2_ws/build/vision_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_bot build --build-base /home/anas/ros2_ws/build/vision_bot/build install --record /home/anas/ros2_ws/build/vision_bot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,23 @@
+1. The "Jittering" Problem (Spinning in Place)
+When the robot was set to avoid walls at 0.5 meters, it got stuck in a confusing loop. Instead of smoothly turning away from a wall, it rapidly twitched left and right multiple times a second. Ultimately, it just wiggled in place instead of escaping the obstacle.
+
+Why it happened: The robot's sensors were programmed to react to the single closest point it could see. Because sensors naturally have a little bit of static or "noise," that single closest point kept randomly bouncing between the left and right sides. The robot was just trying to follow this bouncing point.
+
+2. The Two-Pillar Trap
+This problem was most obvious when the robot tried to drive exactly between two pillars.
+
+Because it was set to react at 0.5 meters, it detected both pillars at the exact same time.
+
+The robot couldn't decide which pillar was actually closer because the sensor static kept changing the measurements.
+
+It ended up indefinitely wiggling back and forth in the gap, totally stuck.
+
+3. How We Fixed It
+We made two changes to get the robot moving smoothly again:
+
+Fix 1 (Smarter Math): Instead of having the robot panic over a single static-filled point, we changed the code to look at the average middle value of everything on its left or right (switching from np.min() to np.nanmedian()). This smoothed out the sensor noise so the robot could confidently pick one direction and stick to it.
+
+Fix 2 (Wait longer to turn): By lowering the reaction distance to 0.2 meters (as mentioned in the previous test), the robot was able to just drive straight through the pillar gap before the dodge behavior even needed to turn on.
+
+4. Wall-Following Mode
+As a side note, the mode where the robot simply drives parallel to a wall worked very well. It drove smoothly and only wobbled a tiny bit if it passed a gap in the wall or a sharp corner.

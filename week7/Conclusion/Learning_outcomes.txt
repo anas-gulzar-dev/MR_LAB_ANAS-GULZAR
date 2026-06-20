@@ -1,0 +1,21 @@
+1. Processing the Sensor Data
+What we did: We used a math tool called NumPy to process the 360-degree laser scans, replacing standard Python lists.
+
+The result: This made the code run significantly faster and made it much easier for humans to read.
+
+2. Robot Behaviors (Completing the Tasks)
+What we did: All five of the planned robot tasks were successfully completed and tested.
+
+The result: For the final, most complex task (Task 5), the robot smoothly combined the "dodge obstacles" and "follow the wall" behaviors. We did this smartly by reusing the code we had already written, which kept the final program clean and organized.
+
+3. Finding the "Goldilocks" Settings (Parameter Tuning)
+What we learned: The exact distance settings we give the robot change its personality completely.
+
+The challenge: If we tell it to react too early (large distance), it gets confused and wiggles around in tight spaces. If we tell it to react too late (small distance), it crashes.
+
+The solution: There is no magic, one-size-fits-all number. You have to put the robot in its actual environment and test it through trial and error to find the perfect balance.
+
+4. Ignoring Sensor Static (Noise Handling)
+What we learned: Programming the robot to react to the absolute single closest point it sees is a bad idea. Random sensor static will trick the robot and cause it to drive erratically.
+
+The solution: Taking the average or "middle" value of a general area (using np.nanmedian()) smooths out the static and makes the robot drive much more reliably.

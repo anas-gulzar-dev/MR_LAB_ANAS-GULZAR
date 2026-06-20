@@ -1,0 +1,23 @@
+Summary of Robot Design Customizations
+
+1): Refinement of the Chassis (Base Link)The base structure was significantly scaled up to 0.50m × 0.35m × 0.15m to support a larger, more robust payload. 
+ The link was vertically offset by 0.140m along the Z-axis, ensuring the chassis sits at the correct height relative to the ground and wheel axles. 
+
+2): Advanced Locomotion System
+
+Replaced the rudimentary base with a complete differential drive system, featuring two distinct, continuous-rotation wheels and high-fidelity cylinder geometry. 
+Integrated front and rear spherical casters to ensure stability across the larger base footprint.
+3): Sensor and Mounting Payload
+
+Implemented a dedicated lidar_mount on the top surface of the robot to elevate the LiDAR sensor, enabling 360-degree environment scanning.  Developed a specialized camera_mount positioned at the front of the chassis, replacing the direct base-attachment method used previously.  Refined the camera dimensions to a 0.02m radius and 0.04m length, incorporating a specific Y-axis rotation to ensure the sensor points forward along the robot's X-axis.  
+
+4): Integration of Robotic Manipulator
+
+Added a multi-degree-of-freedom robotic arm assembly attached to the rear-top of the chassis.  
+The arm structure was decomposed into three functional segments: a revolute shoulder joint (arm_upper), a revolute elbow joint (arm_lower), and a spherical gripper base acting as the end-effector.
+
+5): Simulation and Physics Optimization
+
+Every component, including the new arm segments, was updated with precise collision geometry to allow for accurate interaction in physics simulations.
+The model was completed with calculated inertial properties, including mass and inertia matrices (e.g., I_{xx}, I_{yy}, I_{zz}), which are required for realistic motion and gravity simulation in Gazebo.
+A diverse set of custom materials was applied to improve visual navigation and distinguish between the various hardware segments (e.g., red for upper arm, yellow for lower arm, green for the gripper). 

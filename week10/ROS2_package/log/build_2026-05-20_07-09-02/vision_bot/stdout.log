@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/vision_bot/vision_bot.egg-info
+writing ../../build/vision_bot/vision_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/vision_bot/vision_bot.egg-info/dependency_links.txt
+writing entry points to ../../build/vision_bot/vision_bot.egg-info/entry_points.txt
+writing requirements to ../../build/vision_bot/vision_bot.egg-info/requires.txt
+writing top-level names to ../../build/vision_bot/vision_bot.egg-info/top_level.txt
+writing manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+reading manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+writing manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/anas/ros2_ws/build/vision_bot/build
+creating /home/anas/ros2_ws/build/vision_bot/build/lib
+creating /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+copying vision_bot/camera_follower.py -> /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+copying vision_bot/__init__.py -> /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+running install
+running install_lib
+creating /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+copying /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot/camera_follower.py -> /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+copying /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot/__init__.py -> /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+byte-compiling /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot/camera_follower.py to camera_follower.cpython-310.pyc
+byte-compiling /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/anas/ros2_ws/install/vision_bot/share/ament_index
+creating /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index
+creating /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index/packages
+copying resource/vision_bot -> /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/anas/ros2_ws/install/vision_bot/share/vision_bot
+running install_egg_info
+Copying ../../build/vision_bot/vision_bot.egg-info to /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing camera_follower script to /home/anas/ros2_ws/install/vision_bot/lib/vision_bot
+writing list of installed files to '/home/anas/ros2_ws/build/vision_bot/install.log'

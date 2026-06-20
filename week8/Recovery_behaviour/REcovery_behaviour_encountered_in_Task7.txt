@@ -1,0 +1,19 @@
+Observations on Navigation Recovery Behaviors
+During the autonomous navigation phase of the lab, the system’s ability to handle dynamic obstacles was tested by placing a simulated box directly in the robot's planned trajectory. The TurtleBot3, utilizing the Nav2 stack, demonstrated a robust sequence of recovery behaviors rather than failing or colliding with the object.
+
+The exact sequence of events observed was as follows:
+
+Dynamic Detection: The live LiDAR sensor data instantly detected the new obstacle. This was visually confirmed in RViz as the local costmap updated and inflated a danger zone around the box.
+
+Path Invalidation: The local controller (DWB) recognized that the current trajectory was blocked and halted forward progress to prevent a collision.
+
+Initial Recovery (Backup): Before attempting to replan, the robot executed a "backup" recovery behavior, reversing slightly to create a safer clearance distance from the sudden obstacle.
+
+Assessment (Wait): The robot paused momentarily. This "wait" behavior allows the system's costmaps to fully integrate the new sensor data and check if the dynamic obstacle moves out of the way.
+
+Global Replanning: Because the obstacle remained stationary, the global planner was triggered to compute an entirely new route from the robot's current position to the final goal, actively routing around the newly mapped obstacle.
+
+Resumption of Navigation: Once the new global path was established, the controller resumed following the trajectory, successfully guiding the robot to its destination.
+
+System Mechanics
+These observed actions are governed by the behavior_server node. When the primary navigation task fails, the Behavior Tree Navigator (bt_navigator) calls upon this server to execute specific recovery plugins—namely backup, wait, and spin. The server then sends direct velocity commands to the /cmd_vel topic to maneuver the robot out of immediate danger before handing control back to the standard path-planning pipeline.

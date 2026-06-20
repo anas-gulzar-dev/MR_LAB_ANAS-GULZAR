@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/vision_bot/vision_bot.egg-info/PKG-INFO
+../../build/vision_bot/vision_bot.egg-info/SOURCES.txt
+../../build/vision_bot/vision_bot.egg-info/dependency_links.txt
+../../build/vision_bot/vision_bot.egg-info/entry_points.txt
+../../build/vision_bot/vision_bot.egg-info/requires.txt
+../../build/vision_bot/vision_bot.egg-info/top_level.txt
+../../build/vision_bot/vision_bot.egg-info/zip-safe
+resource/vision_bot
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+vision_bot/__init__.py
+vision_bot/camera_follower.py

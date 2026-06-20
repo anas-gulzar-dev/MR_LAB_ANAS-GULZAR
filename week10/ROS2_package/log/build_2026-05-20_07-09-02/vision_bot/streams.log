@@ -1,0 +1,37 @@
+[0.832s] Invoking command in '/home/anas/ros2_ws/src/vision_bot': PYTHONPATH=/home/anas/ros2_ws/build/vision_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_bot build --build-base /home/anas/ros2_ws/build/vision_bot/build install --record /home/anas/ros2_ws/build/vision_bot/install.log --single-version-externally-managed install_data
+[1.097s] running egg_info
+[1.097s] creating ../../build/vision_bot/vision_bot.egg-info
+[1.098s] writing ../../build/vision_bot/vision_bot.egg-info/PKG-INFO
+[1.098s] writing dependency_links to ../../build/vision_bot/vision_bot.egg-info/dependency_links.txt
+[1.098s] writing entry points to ../../build/vision_bot/vision_bot.egg-info/entry_points.txt
+[1.098s] writing requirements to ../../build/vision_bot/vision_bot.egg-info/requires.txt
+[1.098s] writing top-level names to ../../build/vision_bot/vision_bot.egg-info/top_level.txt
+[1.099s] writing manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+[1.101s] reading manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+[1.102s] writing manifest file '../../build/vision_bot/vision_bot.egg-info/SOURCES.txt'
+[1.102s] running build
+[1.102s] running build_py
+[1.102s] creating /home/anas/ros2_ws/build/vision_bot/build
+[1.102s] creating /home/anas/ros2_ws/build/vision_bot/build/lib
+[1.102s] creating /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+[1.102s] copying vision_bot/camera_follower.py -> /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+[1.102s] copying vision_bot/__init__.py -> /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot
+[1.103s] running install
+[1.103s] running install_lib
+[1.104s] creating /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+[1.104s] copying /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot/camera_follower.py -> /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+[1.104s] copying /home/anas/ros2_ws/build/vision_bot/build/lib/vision_bot/__init__.py -> /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot
+[1.105s] byte-compiling /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot/camera_follower.py to camera_follower.cpython-310.pyc
+[1.105s] byte-compiling /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot/__init__.py to __init__.cpython-310.pyc
+[1.105s] running install_data
+[1.106s] creating /home/anas/ros2_ws/install/vision_bot/share/ament_index
+[1.106s] creating /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index
+[1.106s] creating /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index/packages
+[1.106s] copying resource/vision_bot -> /home/anas/ros2_ws/install/vision_bot/share/ament_index/resource_index/packages
+[1.106s] copying package.xml -> /home/anas/ros2_ws/install/vision_bot/share/vision_bot
+[1.106s] running install_egg_info
+[1.108s] Copying ../../build/vision_bot/vision_bot.egg-info to /home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages/vision_bot-0.0.0-py3.10.egg-info
+[1.109s] running install_scripts
+[1.127s] Installing camera_follower script to /home/anas/ros2_ws/install/vision_bot/lib/vision_bot
+[1.127s] writing list of installed files to '/home/anas/ros2_ws/build/vision_bot/install.log'
+[1.172s] Invoked command in '/home/anas/ros2_ws/src/vision_bot' returned '0': PYTHONPATH=/home/anas/ros2_ws/build/vision_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/anas/ros2_ws/install/vision_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision_bot build --build-base /home/anas/ros2_ws/build/vision_bot/build install --record /home/anas/ros2_ws/build/vision_bot/install.log --single-version-externally-managed install_data

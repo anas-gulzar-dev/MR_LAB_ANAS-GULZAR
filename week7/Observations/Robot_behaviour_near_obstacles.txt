@@ -1,0 +1,25 @@
+1. Sensor Test (Standing Still)
+When the robot was just scanning (not moving), its sensors correctly measured how far away the walls were:
+
+Front: About 0.9 meters away
+
+Left: About 1.2 meters away
+
+Right: About 0.6 meters away
+
+2. Driving Test (Dodging Obstacles)
+When we let the robot drive itself, it successfully spotted obstacles. When it got too close to a wall in front of it, it would stop and turn toward whichever side had more open space.
+
+We tested two different distance settings to tell the robot when it should start turning away from a wall:
+
+Setting 1: Turning at 0.2 meters (Very close)
+
+What happened: The robot drove right up to the walls before turning.
+
+The result: It could easily navigate tight spaces, but it was risky because it got dangerously close to crashing before it reacted.
+
+Setting 2: Turning at 0.5 meters (Further away)
+
+What happened: The robot started turning much earlier.
+
+The result: It was much safer and had plenty of room to turn. However, it was a bit overly cautious and would start turning even when there was plenty of open space ahead, which slowed down its progress.

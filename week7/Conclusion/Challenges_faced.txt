@@ -1,0 +1,14 @@
+1. The Wobbly Robot (Sensor Static)
+The Problem: The robot kept twitching left and right when trying to avoid obstacles because of tiny fluctuations (noise) in the sensor readings.
+
+The Fix: As mentioned earlier, we solved this by changing the math we used to read the sensors so it wouldn't panic over a single jittery data point.
+
+2. The Harmless Shutdown Error
+The Problem: When we forcefully stopped the robot's program (using Ctrl+C), a scary-looking error message popped up.
+
+The Fix: We figured out this is actually just a known, harmless bug in the robot's operating system (ROS 2 Humble). It doesn't affect how the robot actually drives or performs.
+
+3. Finding the Perfect Settings
+The Problem: We couldn't just guess the best distance settings for the front and side sensors.
+
+The Fix: It took a lot of trial and error. We had to run the robot through the simulated world over and over again, tweaking the numbers until we found the "sweet spot" where it drove smoothly.

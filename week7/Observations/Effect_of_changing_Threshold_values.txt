@@ -1,0 +1,29 @@
+1. Front Distance Setting (When to Dodge)
+This setting controls how close the robot can get to a wall in front of it before it stops and turns.
+
+Testing at 0.5 meters (Further away)
+
+The Good: It reacted early, providing a large safety margin.
+
+The Bad: It was too cautious and would often "dodge" invisible obstacles in wide-open hallways.
+
+Testing at 0.2 meters (Very close)
+
+The Good: It stopped dodging nothing in open spaces and only reacted to real, immediate threats.
+
+The Bad: It waited too long to react. It was so close to the wall that sometimes it would crash before the turn actually started.
+
+Recommendation: A setting of 0.35 meters is the sweet spot—safe enough to avoid crashes, but close enough to avoid unnecessary twitching in open spaces.
+
+2. Side Distance Setting (When to Follow the Wall)
+This setting controls when the robot decides it is close enough to a wall on its side to start driving parallel to it.
+
+Testing at 0.5 meters (Further away)
+
+What happened: The robot started following walls easily and stayed nicely centered in the hallways.
+
+Testing at 0.2 meters (Very close)
+
+What happened: The robot would only start following the wall if it was practically touching it. Because it rarely got that close, it mostly just drove straight and ignored the walls.
+
+The result: This setting basically broke the wall-following feature.
